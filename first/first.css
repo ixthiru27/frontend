@@ -1,0 +1,113 @@
+.{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    display:flex;
+    display: grid;
+}
+
+
+.container{
+    background-color: #e6efee;
+    height: auto;
+    width: auto;
+    position: relative;
+    display:flex;
+    min-height: 550px;
+}
+.up{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+.v-line{
+    height: 45px;
+    width: 2px;
+    background-color: #000;
+}
+.header-back{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    z-index: 1;
+}
+.header-back img{ 
+    height: auto;
+    width:100%;
+    opacity: 0.3;
+
+}
+.hero-text{
+    position: absolute;
+    padding: 135px;
+    z-index: 2;
+}
+.header-front{
+    position:absolute;
+    display: flex;
+    justify-content:right;
+    right: 0;
+    width: 50%;
+    z-index: 2;
+}
+.header-front img{
+    height:105%;
+    width:65%;
+}
+.header-content{
+    padding:30px
+}
+.supported {
+    display: flex;
+    align-items: center;
+    color: #165b75;
+    justify-content: center;
+}
+
+
+.downimg1{
+    display:grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    padding-bottom:10px;
+    gap:20px;
+     align-items:center;
+   
+   
+}
+ 
+.downimg1 img {
+    width: 120px;  
+    height: auto;
+    border-bottom:2px;
+}
+.abu{
+    display:flex;
+    justify-content: center;
+}
+.sponsors {
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin:0 auto;
+}
+ 
+.sponsors img {
+    width: 120px;
+    height: auto;
+    padding: 0 20px;
+    justify-self: center;
+}
+ 
+ 
+.sponsors img:not(:nth-child(4n+1)) {
+    border-left: 1px solid #ccc;
+}
+ 
